@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.ico?v=1.1">
+
+        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class='row jumbotron justify-content-center' style='background-color: red'>
+            <h1 class='h1'>Числови Методи</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <label for='calculator' class='h4'>Десетично представяне на числа във форма с плаваща запетая</label>
+                <form id="calculator">
+                    <div class="form-group row">
+                        <label for="number" class="col-sm-3 col-form-label">Число</label>
+                        <div class="col-sm-7">
+                            <input type="number" class="form-control" id="number" placeholder="0,0" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="rounder" class="col-sm-3 col-form-label">Закръгляне</label>
+                        <div class="col-sm-3">
+                            <input type="number" pattern="^[\d]*$" class="form-control" id="rounder" step="1" placeholder="0" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="approximation" class="col-sm-3 col-form-label">Приближение</label>
+                        <div class="col-sm-7">
+                            <input type="number" class="form-control" id="approximation" placeholder="0,0" min='0'  disabled>
+                        </div>
+                    </div>
+
+
+                </form>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button id='calculate' onclick="calculateApproximation(number.value, rounder.value)" class="btn btn-primary">Пресметни</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/scripts.js" type="text/javascript"></script>
+
+    </body>
+</html>
