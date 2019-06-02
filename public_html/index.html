@@ -16,44 +16,7 @@
     <h1 class='h1'>Числови Методи</h1>
 </div>
 <div class="row justify-content-center">
-    <div class="col-4">
-        <label for='calculator' class='h4'>Десетично представяне на числа във форма с плаваща запетая</label>
-        <form id="calculator">
-            <div class="form-group row">
-                <label for="number" class="col-sm-3 col-form-label">Число 1</label>
-                <div class="col-sm-7">
-                    <input type="text" class="form-control" id="number" placeholder="0,0" required>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="Fx" class="col-sm-3 col-form-label">Число 2</label>
-                <div class="col-sm-7">
-                    <input type="text" class="form-control" id="Fx" placeholder="0,0" required>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="rounder" class="col-sm-3 col-form-label">Закръгляне</label>
-                <div class="col-sm-3">
-                    <input type="number" pattern="^[\d]*$" class="form-control" id="rounder" step="1" placeholder="0"
-                           required>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="approximation" class="col-sm-3 col-form-label">Приближение</label>
-                <div class="col-sm-7">
-                    <input type="number" class="form-control" id="approximation" placeholder="0,0" min='0' disabled>
-                </div>
-            </div>
-
-
-        </form>
-        <div class="form-group row">
-            <div class="col-sm-10">
-                <button id='calculate' onclick="calculate(number.value, rounder.value)" class="btn btn-primary">
-                    Пресметни
-                </button>
-            </div>
-        </div>
+    <div class="col-8 offset-2" id="result">
     </div>
 
 </div>
